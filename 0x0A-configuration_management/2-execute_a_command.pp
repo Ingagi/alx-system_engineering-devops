@@ -1,7 +1,6 @@
-#!/bin/bash
-# killmenow process
-while [[ true ]]
-do
-    sleep 2
-done
+# create a manifest that kills a process named killmenow.
 
+exec { 'killmenow':
+  path    => '/usr/bin/',
+  command => 'pkill -f killmenow',
+}
