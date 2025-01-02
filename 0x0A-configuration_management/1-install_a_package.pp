@@ -1,6 +1,6 @@
 # 1-install_a_package.pp
 
-package { 'httpd':
-  ensure => 'installed',
+package { 'nginx':
+  ensure => 'latest',
 }
 
